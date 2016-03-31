@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.activity.ReceipesListActvity">
+    <item android:id="@+id/editar"
+        android:icon="@mipmap/ic_edit"
+        android:title="@string/editar_item">
+    </item>
+    <item android:id="@+id/borrar"
+        android:title="@string/borrar_item"
+        android:icon="@mipmap/ic_delete">
+    </item>
+</menu>
