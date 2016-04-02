@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaLastNF</string>
+    <string name="tuCartera">Your wallet</string>
+    <string name="imagenCartera">Wallet image</string>
+    <string name="tituloCartera">Manage your wallet</string>
+    <string name="nombreAux">Person Name</string>
+    <string name="dineroAux">1</string>
+    <string name="textAux">Person Name I owe 0$ Lorem ipsum </string>
+    <string name="nombreAux2">Person Name2</string>
+    <string name="dineroAux2">5</string>
+    <string name="textAux2">Person Name me debe 0e Lorem ipsum </string>
+    <string name="inicio">Home</string>
+    <string name="ayuda">Help selected</string>
+    <string name="guardar_item">Save item</string>
+    <string name="editar_item">Edit item</string>
+    <string name="borrar_item">Delete item</string>
+    <string name="nuevo_item">New item</string>
+    <string name="personaDinero">Person Money</string>
+    <string name="cuantoDinero">How much money?</string>
+    <string name="porque">Why?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
