@@ -65,7 +65,7 @@ public class AddEditWalletActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.ayuda:
-                Toast.makeText(this, "Ayuda seleccionada", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.ayudaSelect, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.inicio:
                 Intent inicioIntent = new Intent(this, MainActivity.class);

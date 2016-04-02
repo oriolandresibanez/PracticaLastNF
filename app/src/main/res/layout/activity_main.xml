@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Elige una de las dos possibles opciones!"
+        android:text="@string/posiblesOpcione"
         android:layout_weight="0.2"
         android:gravity="center"/>
     <Button
@@ -22,14 +22,17 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@mipmap/ic_wallet"
-        android:text="Ha deber"
+        android:text="@string/deber"
         android:textSize="30sp"
         android:onClick="nuevaSeleccion"/>
     <Button
         android:id="@+id/buttonDeben"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:text="@string/deben"
+        android:background="@mipmap/ic_wallet"
         android:layout_weight="1"
+        android:textSize="30sp"
         android:onClick="nuevaSeleccion"/>
 
 </LinearLayout>

@@ -12,12 +12,13 @@
     <string name="dineroAux2">5</string>
     <string name="textAux2">Person Name me debe 0e Lorem ipsum </string>
     <string name="inicio">Inicio</string>
-    <string name="ayuda">Ajuda seleccionada</string>
+    <string name="ayuda">Ajuda</string>
+    <string name="ayudaSelect">Ajuda seleccionada</string>
     <string name="guardar_item">Guardar item</string>
     <string name="editar_item">Editar item</string>
     <string name="borrar_item">Borrar item</string>
     <string name="nuevo_item">Nou item</string>
-    <string name="personaDinero">Persona Diners</string>
+    <string name="personaDinero">Persona?</string>
     <string name="cuantoDinero">Cuants diners?</string>
     <string name="porque">Per què?</string>
 

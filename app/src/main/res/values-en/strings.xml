@@ -11,12 +11,13 @@
     <string name="dineroAux2">5</string>
     <string name="textAux2">Person Name me debe 0e Lorem ipsum </string>
     <string name="inicio">Home</string>
-    <string name="ayuda">Help selected</string>
+    <string name="ayuda">Help</string>
+    <string name="ayudaSelect">Help selected</string>
     <string name="guardar_item">Save item</string>
     <string name="editar_item">Edit item</string>
     <string name="borrar_item">Delete item</string>
     <string name="nuevo_item">New item</string>
-    <string name="personaDinero">Person Money</string>
+    <string name="personaDinero">Person?</string>
     <string name="cuantoDinero">How much money?</string>
     <string name="porque">Why?</string>
 

@@ -10,14 +10,18 @@
     <string name="dineroAux2">5</string>
     <string name="textAux2">Person Name me debe 0e Lorem ipsum </string>
     <string name="inicio">Inicio</string>
-    <string name="ayuda">Ayuda seleccionada</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="ayudaSelect">Ayuda seleccionada</string>
     <string name="guardar_item">Guardar item</string>
     <string name="editar_item">Editar item</string>
     <string name="borrar_item">Borrar item</string>
     <string name="nuevo_item">Nuevo item</string>
-    <string name="personaDinero">Persona Dinero</string>
+    <string name="personaDinero">Persona?</string>
     <string name="cuantoDinero">Cuanto dinero?</string>
     <string name="porque">Por qué?</string>
+    <string name="posiblesOpcione">Elige una de las dos possibles opciones!</string>
+    <string name="deber">Ha deber</string>
+    <string name="deben">Me deben</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
