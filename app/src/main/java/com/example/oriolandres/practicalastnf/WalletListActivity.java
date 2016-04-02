@@ -132,23 +132,6 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
         }
 
 
-        /*
-        Intent intent2 = new Intent(this,ReceipeDetailActivity.class);
-
-        String titulo = model.get(position).getTitulo();
-        String tiempo = model.get(position).getTiempo();
-        String dificultad = model.get(position).getDificultad();
-        String ingrediente = model.get(position).getIngredientes();
-        String categoria = categoriaSelect;
-        int imagen = model.get(position).getImage();
-
-        intent2.putExtra(tituloDescr, titulo);
-        intent2.putExtra(categoriaDescr,categoria);
-        intent2.putExtra(tiempoDescr,tiempo);
-        intent2.putExtra(dificultadDescr,dificultad);
-        intent2.putExtra(ingredientesDescr,ingrediente);
-        intent2.putExtra(imagenDescr,imagen);
-        startActivity(intent2);*/
     }
 
     @Override

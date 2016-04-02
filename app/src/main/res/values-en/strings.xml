@@ -20,6 +20,9 @@
     <string name="personaDinero">Person?</string>
     <string name="cuantoDinero">How much money?</string>
     <string name="porque">Why?</string>
+    <string name="posiblesOpcione">Choose one of the two options!</string>
+    <string name="deber">I owe</string>
+    <string name="deben">They owe me</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

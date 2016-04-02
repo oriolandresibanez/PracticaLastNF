@@ -21,6 +21,9 @@
     <string name="personaDinero">Persona?</string>
     <string name="cuantoDinero">Cuants diners?</string>
     <string name="porque">Per què?</string>
+    <string name="posiblesOpcione">Elegeix una de les dos possibles opcions!</string>
+    <string name="deber">Ha deure</string>
+    <string name="deben">Em deuen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hola blanc fragment</string>
