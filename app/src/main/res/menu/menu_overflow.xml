@@ -12,8 +12,4 @@
         android:title="@string/inicio"
         app:showAsAction="never">
     </item>
-    <item android:id="@+id/ayuda"
-        android:title="@string/ayuda"
-        app:showAsAction="never">
-    </item>
 </menu>

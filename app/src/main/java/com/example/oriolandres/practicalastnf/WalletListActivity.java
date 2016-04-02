@@ -174,9 +174,6 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
                 intent3.putExtra(walletInte,walletaAñad);
                 startActivityForResult(intent3, PICK_CONTACT);
                 break;
-            case R.id.ayuda:
-                Toast.makeText(this, "Ayuda seleccionada", Toast.LENGTH_SHORT).show();
-                break;
             case R.id.inicio:
                 Intent inicioIntent = new Intent (this, MainActivity.class);
                 startActivity(inicioIntent);
