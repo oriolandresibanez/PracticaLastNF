@@ -46,7 +46,9 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
         setContentView(R.layout.activity_wallet_list);
         //setTitle("Lista Recetas");
         Bundle intent = getIntent().getExtras();
-        walletSelect = intent.getString(MainActivity.tipoBoton);
+        if(intent !=null) {
+            walletSelect = intent.getString(MainActivity.tipoBoton);
+        }
 
         createDataModel();
 

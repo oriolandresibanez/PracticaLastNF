@@ -20,14 +20,23 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/tuCartera" />
+            android:label="@string/tuCartera"
+            android:launchMode="singleTask"/>
         <activity
             android:name=".WalletListActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleTask"/>
         <activity
             android:name=".AddEditWalletActivity"
             android:parentActivityName=".WalletListActivity" />
-        <activity android:name=".DetailWalletActivity"></activity>
+
+        <activity android:name=".DetailWalletActivity"
+            android:parentActivityName=".WalletListActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WalletListActivity" />
+        </activity>
     </application>
 
 </manifest>
