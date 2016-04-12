@@ -32,6 +32,25 @@ public class DetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
+        Bundle args = getArguments();
+        if (args != null) {
+
+            nomTextView = (TextView) this.getActivity().findViewById(R.id.nomPers);
+            dineroTextView = (TextView) this.getActivity().findViewById(R.id.dineroPers);
+            textoTextView = (TextView) this.getActivity().findViewById(R.id.textoPers);
+
+            String nom = (String) args.getString("nom");
+            String din = (String) args.getString("din");
+            String tex = (String) args.getString("text");
+
+            nomTextView.setText(nom);
+            dineroTextView.setText(din);
+            textoTextView.setText(tex);
+
+
+        }
+
+
     }
 
     @Override

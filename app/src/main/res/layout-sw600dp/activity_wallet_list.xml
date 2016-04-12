@@ -17,14 +17,21 @@
         android:id="@+id/listView">
     </ListView>
 
-    <fragment
+    <!--<fragment
         android:name="com.example.oriolandres.practicalastnf.DetailFragment"
         android:id="@+id/detailFragmentTab"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         tools:layout="@layout/fragment_detail">
-    </fragment>
+    </fragment>-->
+
+    <FrameLayout
+        android:id="@+id/detailFragmentCont"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
 
 
 </LinearLayout>

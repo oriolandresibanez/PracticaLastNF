@@ -1,5 +1,7 @@
 package com.example.oriolandres.practicalastnf;
 
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,7 +46,7 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallet_list);
-        //setTitle("Lista Recetas");
+        setTitle(R.string.listam);
         Bundle intent = getIntent().getExtras();
         if(intent !=null) {
             walletSelect = intent.getString(MainActivity.tipoBoton);
@@ -104,7 +106,7 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-        DetailFragment detailFragment = (DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFragmentTab);
+        DetailFragment detailFragment = (DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFragmentCont);
         String nombre = model.get(position).getNombrePersona();
         String dinero = model.get(position).getDinero();
         String texto = model.get(position).getTexto();
@@ -122,13 +124,20 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
 
         }else{
 
-            TextView nomPersonaTextView = (TextView) findViewById(R.id.nomPers);
-            TextView dineroPersonaTextView = (TextView) findViewById(R.id.dineroPers);
-            TextView textoPersonaTextView = (TextView) findViewById(R.id.textoPers);
-            nomPersonaTextView.setText(nombre);
-            dineroPersonaTextView.setText(dinero);
-            textoPersonaTextView.setText(texto);
+            DetailFragment detailFragment3 = new DetailFragment();
 
+            Bundle bundle = new Bundle();
+            bundle.putString("nom", nombre);
+            bundle.putString("din", dinero);
+            bundle.putString("text", texto);
+
+
+            detailFragment3.setArguments(bundle);
+
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction fragmnTrans = fm.beginTransaction();
+            fragmnTrans.add(R.id.detailFragmentCont, detailFragment3);
+            fragmnTrans.commit();
         }
 
 
