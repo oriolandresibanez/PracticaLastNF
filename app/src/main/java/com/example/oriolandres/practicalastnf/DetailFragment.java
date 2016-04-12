@@ -24,8 +24,7 @@ public class DetailFragment extends Fragment {
         // Required empty public constructor
     }
 
-
-
+    private String nom,din,tex;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,20 +33,15 @@ public class DetailFragment extends Fragment {
 
         Bundle args = getArguments();
         if (args != null) {
+             nom =  args.getString("NOMB_1");
+             din =  args.getString("DIN_1");
+             tex =  args.getString("TEXT_1");
 
-            nomTextView = (TextView) this.getActivity().findViewById(R.id.nomPers);
-            dineroTextView = (TextView) this.getActivity().findViewById(R.id.dineroPers);
-            textoTextView = (TextView) this.getActivity().findViewById(R.id.textoPers);
-
-            String nom = (String) args.getString("nom");
-            String din = (String) args.getString("din");
-            String tex = (String) args.getString("text");
-
-            nomTextView.setText(nom);
-            dineroTextView.setText(din);
-            textoTextView.setText(tex);
-
-
+        }else{
+             Intent intent = getActivity().getIntent();
+             nom = intent.getStringExtra("NOMB_1");
+             din = intent.getStringExtra("DIN_1");
+             tex  = intent.getStringExtra("TEXT_1");
         }
 
 
@@ -61,14 +55,14 @@ public class DetailFragment extends Fragment {
         dineroTextView = (TextView) this.getActivity().findViewById(R.id.dineroPers);
         textoTextView = (TextView) this.getActivity().findViewById(R.id.textoPers);
 
-        Intent intent = getActivity().getIntent();
-        String nombre = intent.getStringExtra(WalletListActivity.nombPers);
-        String dinero = intent.getStringExtra(WalletListActivity.dineroPers);
-        String texto = intent.getStringExtra(WalletListActivity.textoPers);
+        if(din != null){
+            nomTextView.setText(nom);
+            dineroTextView.setText(din);
+            textoTextView.setText(tex);
+        }
 
-        nomTextView.setText(nombre);
-        dineroTextView.setText(dinero);
-        textoTextView.setText(texto);
+
+
 
     }
 

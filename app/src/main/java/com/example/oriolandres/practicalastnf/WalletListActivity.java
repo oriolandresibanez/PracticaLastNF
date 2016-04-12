@@ -106,20 +106,19 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-        DetailFragment detailFragment = (DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFragmentCont);
+        //DetailFragment detailFragment = (DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detailFragmentCont);
         String nombre = model.get(position).getNombrePersona();
         String dinero = model.get(position).getDinero();
         String texto = model.get(position).getTexto();
 
-        if(detailFragment==null){
+        if(getResources().getConfiguration().smallestScreenWidthDp < 600){
 
             Intent intent = new Intent(this,DetailWalletActivity.class);
             String wallSele = walletSelect;
 
-            intent.putExtra(nombPers, nombre);
-            intent.putExtra(dineroPers, dinero);
-            intent.putExtra(textoPers, texto);
-            intent.putExtra(wallPers, wallSele);
+            intent.putExtra("NOMB_1", nombre);
+            intent.putExtra("DIN_1", dinero);
+            intent.putExtra("TEXT_1", texto);
             startActivity(intent);
 
         }else{
@@ -127,9 +126,9 @@ public class WalletListActivity extends AppCompatActivity implements AdapterView
             DetailFragment detailFragment3 = new DetailFragment();
 
             Bundle bundle = new Bundle();
-            bundle.putString("nom", nombre);
-            bundle.putString("din", dinero);
-            bundle.putString("text", texto);
+            bundle.putString("NOMB_1", nombre);
+            bundle.putString("DIN_1", dinero);
+            bundle.putString("TEXT_1", texto);
 
 
             detailFragment3.setArguments(bundle);
